@@ -1,0 +1,28 @@
+{
+  "name": "todos",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "co-mocha": "^1.2.0",
+    "enzyme": "^2.4.1",
+    "express": "^4.15.2",
+    "mocha": "^3.2.0",
+    "react-addons-test-utils": "^15.3.0",
+    "react-scripts": "^0.9.3",
+    "selenium-webdriver": "^3.3.0"
+  },
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "react-scripts test",
+    "integration-specs": "yarn run build && ./node_modules/mocha/bin/mocha --require ./it-specs/helpers/setup it-specs/**/*.spec.js"
+  }
+}
